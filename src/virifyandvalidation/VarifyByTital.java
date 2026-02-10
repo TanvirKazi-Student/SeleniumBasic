@@ -11,21 +11,21 @@ public class VarifyByTital {
 
 		driver.manage().window().maximize();
 
-		String expected_title = "Demo Web Shop";
+		String expected_title = "Demo Web Shop"; // find title so use //title syntax in DOM
 		Thread.sleep(2000);
 		driver.get("https://demowebshop.tricentis.com/");
 
 		String actual_title = driver.getTitle();
 
 		if (expected_title.equals(actual_title)) {
-			System.out.println("I am in the targeted webpage");//pass
+			System.out.println("I am in the targeted webpage");// pass
 			driver.findElement(By.xpath("//a[@class='ico-register']")).click();
 			System.out.println("test case is Pass");
-			
+
 		} else {
-			System.out.println("I am not in the targeted webpage");//faile
+			System.out.println("I am not in the targeted webpage");// faile
 			driver.close();
-			throw new Exception("test case is Pass"); 
+			throw new Exception("test case is faile");
 		}
 
 		Thread.sleep(2000);

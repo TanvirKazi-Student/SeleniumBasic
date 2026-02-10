@@ -3,8 +3,8 @@ package locator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-//linkText
-public class BylinkText {
+
+public class GetText {
 
 public static void main(String[] args) throws InterruptedException {
 		
@@ -15,7 +15,7 @@ public static void main(String[] args) throws InterruptedException {
 		Thread.sleep(2000);
 		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
-		WebElement register =  driver.findElement(By.linkText("Community poll"));
+		WebElement register =  driver.findElement(By.className("ico-register"));
 		System.out.println("Text in Targeted Element is" +register.getText()); 
 		Thread.sleep(2000);
 		driver.close();

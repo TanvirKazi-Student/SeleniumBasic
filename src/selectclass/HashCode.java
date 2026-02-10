@@ -22,6 +22,7 @@ public class HashCode {
 		Select sel = new Select(singleSelect);
 
 		WebElement web = sel.getFirstSelectedOption();
+		System.out.println(web);
 		Thread.sleep(2000);
 
 		sel.selectByIndex(2);

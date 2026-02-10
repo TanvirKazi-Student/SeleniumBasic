@@ -25,13 +25,13 @@ public class GetFirstSelectedOption {
 		Thread.sleep(2000);
 		mulSel.selectByIndex(3);
 		Thread.sleep(2000);
-        
-	    WebElement tex	= mulSel.getFirstSelectedOption();
-	    System.out.println(tex.getText());
-	    
-	    List<WebElement> tex1	= mulSel.getAllSelectedOptions();
-	   
-	    for (WebElement webElement : tex1) {
+
+		WebElement tex = mulSel.getFirstSelectedOption();
+		System.out.println(tex.getText());
+
+		List<WebElement> tex1 = mulSel.getAllSelectedOptions();
+
+		for (WebElement webElement : tex1) {
 			System.out.println(webElement.getText());
 		}
 		driver.close();

@@ -1,5 +1,4 @@
 package crossbroweser;
-import java.sql.DriverManager;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -11,7 +10,7 @@ public class crossbrawoser {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = null;
-        String browser = "CHROME";
+        String browser = "FIREFOX";
         if(browser.equalsIgnoreCase("chrome")) {
         	driver = new  ChromeDriver();
         }else if(browser.equalsIgnoreCase("edge")){

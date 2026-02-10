@@ -15,6 +15,7 @@ import org.openqa.selenium.io.FileHandler;
 public class DynamicName {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
+		
 		String local = LocalDateTime.now().toString().replace(':', '-');
 		System.out.println(local);
 		
@@ -29,7 +30,5 @@ public class DynamicName {
 		File to = new File("C:\\Users\\tanvi\\OneDrive\\Desktop\\demo screenshot\\"+local+".png");
 		FileHandler.copy(from, to);
 		Thread.sleep(3000);
-		
-		
 	}
 }

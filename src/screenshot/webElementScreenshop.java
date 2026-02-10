@@ -20,6 +20,7 @@ public class webElementScreenshop {
 		String local = LocalDateTime.now().toString().replace(':', '-');
 		String dynamicName = "searchfild" + local;
 		System.out.println(local);
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

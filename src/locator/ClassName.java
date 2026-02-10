@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 // className
-public class ByClassName {
+public class ClassName {
 
 	public static void main(String[] args) throws InterruptedException {
 

@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ById {
+public class Id {
 
 //id	
 public static void main(String[] args) throws InterruptedException {
@@ -17,7 +17,7 @@ public static void main(String[] args) throws InterruptedException {
 	
 	driver.get("https://demowebshop.tricentis.com/");
 	
-	driver.findElement(By.id("id=\"pollanswers-3\"")).click();
+	driver.findElement(By.id("newsletter-subscribe-button")).click();
 	
 	Thread.sleep(2000);
 	
