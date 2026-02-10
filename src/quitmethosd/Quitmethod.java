@@ -16,7 +16,7 @@ public class Quitmethod {
 		driver.findElement(By.linkText("Facebook")).click();
 		Thread.sleep(2000);
 // 		driver.close();
-		driver.quit();
+//		driver.quit();
 
 	}
 }
