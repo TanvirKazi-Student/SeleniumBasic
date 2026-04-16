@@ -3,11 +3,16 @@ package assignment6;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//1)open the browser
+//2)maximize the browser
+//3)after maximize enter into dws home page
+//4)add build cheap computer 
+//5)select high configration feature,quality is 2
+//6)add the product to the shopping cart then click check out 
+//7)close the browser
+//8)only use relative xpath
 public class XpathByRelative2 {
-
-	public static void main(String[] args) throws InterruptedException {
-
+public static void main(String[] args) throws InterruptedException {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demowebshop.tricentis.com/");

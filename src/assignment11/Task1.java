@@ -7,23 +7,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 //Task first way first
+//Write a script for DWS webSite
+//open the browser
+//enter into DWS page
+//click digital download
+//select all the option inside the sort by drop down top to bottom
+//close the browser
 public class Task1 {
-
-	public static void main(String[] args) throws InterruptedException {
-
+public static void main(String[] args) throws InterruptedException {
 		ChromeDriver driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		driver.get("https://demowebshop.tricentis.com/");
-
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Digital downloads")).click();
 		Thread.sleep(2000);
 		WebElement singlSelect = driver.findElement(By.id("products-orderby"));
 		Select sel = new Select(singlSelect);
 		List<WebElement> list = sel.getOptions();
-
 		int index = 0;
 		for (WebElement webElement : list) {// 0,1
 			sel.selectByIndex(index++);// 0,1,2
@@ -33,7 +34,6 @@ public class Task1 {
 			}
 			Thread.sleep(1500);
 		}
-
 //		for (; index < list.size(); index++) 
 //		{
 //			sel.selectByIndex(index);//0,1
@@ -43,9 +43,7 @@ public class Task1 {
 //				}
 //			Thread.sleep(1500);
 //		}
-
 		System.out.println("outside the for loop");
 		driver.quit();
-
 	}
 }

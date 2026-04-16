@@ -20,8 +20,9 @@ public class IsDisplayed {
 		if (poll.isDisplayed()) {
 			System.out.println("element is found testcase is passed");
 		} else {
-			driver.close();
-			throw new Exception("not pass");
+			System.out.println("element is not found testcase is failed");
+//			driver.close();
+//			throw new Exception("not pass");
 		}
 		Thread.sleep(2000);
 		driver.close();

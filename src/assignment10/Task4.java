@@ -3,7 +3,14 @@ package assignment10;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//1) open the browser
+//2) maximize the browser
+//3) enter into DWS webSite
+//4) click the login link
+//5) verify the page whether I am successfully enter into login page by using title
+//6) pass the current credential by the email text field
+//7) verify the data is successfully added email text field or not
+//8) close the browser
 public class Task4 {
 
 	public static void main(String[] args) throws Exception {

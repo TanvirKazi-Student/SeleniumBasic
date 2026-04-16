@@ -4,21 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//write a scipt for DWS 
+//1)open the browser
+//2)maximize the browser
+//3)after enter into the DWS home page 
+//4)verify the page by using url
+//5)add 25& gift card to the shopping card 
+//6)fill all the details
+//7)add the product to shopping card once product is succesfully add inside the your page 
+//8)close the browser
 public class VarifyByUrl {
-
-	public static void main(String[] args) throws Exception {
-
+public static void main(String[] args) throws Exception {
 		WebDriver driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
-
 		Thread.sleep(2000);
 		String expectedResult = "https://demowebshop.tricentis.com/";
-
 		driver.get(expectedResult);
 		String actualResult = driver.getCurrentUrl();
-
 		if (expectedResult.equals(actualResult)) {
 			System.out.println("I am in the target web page");
 			Thread.sleep(2000);
@@ -42,8 +44,6 @@ public class VarifyByUrl {
 			driver.close();
 			throw new Exception("test case faild");
 		}
-
 		driver.close();
-
 	}
 }
