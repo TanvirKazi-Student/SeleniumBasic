@@ -3,12 +3,12 @@ package assignment2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-//open the browser 
-//maximize the Browser after maximizing enter into dws(demowebshop) web site
-//after entering click on register
-//after registering fill all the details from 
-//click the register button
-//close the Browser
+//1)Open the browser
+//2)Maximize the browser and enter into Demo Web Shop website
+//3)Click on Register
+//4)Fill all the registration details
+//5)Click on Register button
+//6)Close the browser
 public class Register {
 public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();

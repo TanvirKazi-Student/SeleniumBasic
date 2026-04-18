@@ -3,15 +3,15 @@ package assignment3;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-//open the browser 
-//maximize the Browser after maximizing enter into dws(demowebshop) web site
-//after entering click on register
-//after registering fill all the details from 
-//click the register button	
-//close the Browser
-
+//1. Open the browser
+//2. Maximize the browser
+//3. Enter into Demo Web Shop website
+//4. Click on Login link
+//5. after Login fill all the details  
+//6. Click on Login button
+//7. Close the browser
 public class Login {
-public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demowebshop.tricentis.com/");

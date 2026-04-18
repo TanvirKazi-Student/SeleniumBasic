@@ -8,11 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 //Task first way first
 //Write a script for DWS webSite
-//open the browser
-//enter into DWS page
-//click digital download
-//select all the option inside the sort by drop down top to bottom
-//close the browser
+//1)open the browser
+//2)enter into DWS page
+//3)click digital download
+//4)select all the option inside the sort by drop down top to bottom
+//5)close the browser
 public class Task1 {
 public static void main(String[] args) throws InterruptedException {
 		ChromeDriver driver = new ChromeDriver();

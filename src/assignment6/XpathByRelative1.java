@@ -18,9 +18,9 @@ public static void main(String[] args) throws InterruptedException {
 		String text = driver.findElement(By.xpath("//a[contains(text(),'3rd Album')]/../../div[3]/div/span")).getText();
 		System.out.println("3rd Album place:"+text);
 		String text1 = driver.findElement(By.xpath("//a[contains(text(),'Music 2')]/../../div[3]/div/span")).getText();
-		System.out.println("3rd Album place:"+text1);
+		System.out.println("Music 2:"+text1);
 		String text2 = driver.findElement(By.xpath("(//a[contains(text(),'Music 2')])[2]/../../div[3]/div/span")).getText();
-		System.out.println("3rd Album place:"+text2);
+		System.out.println("Music 2:"+text2);
 		Thread.sleep(2000);
 		driver.close();
 	}

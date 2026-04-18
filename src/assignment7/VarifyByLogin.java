@@ -13,8 +13,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //6)configr with low configration
 //7)quntity should be 3
 //8)add product into shopping card
-//9)verify wather the product is successfully remove shopping card page or not . do log out
-//10)close the browser
+//9)after remove product into shopping card
+//10)verify wather the product is successfully remove shopping card page or not . do log out
+//11)close the browser
 public class VarifyByLogin {
 public static void main(String[] args) throws Exception {
 		WebDriver driver = new ChromeDriver();
