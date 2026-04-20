@@ -30,9 +30,9 @@ public static void main(String[] args) throws Exception {
 			String actualPass = serchfiledPass.getAttribute("value");
 
 			if (expectedPass.equals(actualPass)) {
-				System.out.println("email is correctly pass ");
+				System.out.println("password is correctly pass ");
 			} else {
-				System.out.println("email is not correctly pass ");
+				System.out.println("password is not correctly pass ");
 			}
 		} else {
 			driver.close();

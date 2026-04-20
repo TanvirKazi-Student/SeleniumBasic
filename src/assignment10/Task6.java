@@ -24,9 +24,9 @@ public static void main(String[] args) throws Exception {
 		driver.findElement(By.xpath("//input[contains(@class,'button-1 login-button')]")).click();
 		WebElement logOut = driver.findElement(By.linkText("Log out"));
 		if (logOut.isDisplayed()) {
-			System.out.println("logine is success Test case is Pass");
+			System.out.println("login is success Test case is Pass");
 		} else {
-			System.out.println("logine is not  success Test case is Faile");
+			System.out.println("login is not  success Test case is Faile");
 		}
 		Thread.sleep(2000);
 		driver.close();

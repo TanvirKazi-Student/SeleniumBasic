@@ -8,6 +8,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+//1) Open the browser  
+//2) Maximize the browser window  
+//3) Enter into DWS site and log in  
+//4) Click Apparel Shoes  
+//5) Choose the minimum size  
+//6) Add to cart  
+//7) Remove the product with the highest price  
+//8) Check whether the product is removed successfully from the shopping cart  
+//9) Log out  
+//10) Close the browser  
 
 public class Task3 {
 	public static void main(String[] args) throws Exception {

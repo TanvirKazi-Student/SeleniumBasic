@@ -10,6 +10,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Task1 {
+//	1) Open the browser  
+//	2) Maximize the browser window  
+//	3) Enter into Demoapp  qspider  
+//	4) Click UI Testing Concept  
+//	5) Write script for all mouse actions on web elements  
+//	6) Perform Drag & Drop action  
+//	7) Perform mouse actions → Drag position & Drag multiple  
 
 	public static void main(String[] args) throws InterruptedException {
 

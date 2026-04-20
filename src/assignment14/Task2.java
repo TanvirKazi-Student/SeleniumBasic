@@ -6,6 +6,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+//2) Write a script for Guru99
+
+//1) Open the browser
+//2) Maximize the browser
+//3) Enter into Guru99.com
+//4) Perform right-click action
+//5) Click on "Right Click Me" element
+//6) Click all the elements one by one like Edit, Cut, Copy, Delete, Paste, Quit
+//7) While clicking, popup will be displayed
+//8) Once popup is displayed, fatch the text of popup
+//9) Handle the popup
+//10) Close the browser
 public class Task2 {
 
 	public static void main(String[] args) throws InterruptedException {

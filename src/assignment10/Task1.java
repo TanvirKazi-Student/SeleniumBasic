@@ -25,7 +25,7 @@ public static void main(String[] args) throws Exception {
 			Thread.sleep(2000);
 			WebElement login = driver.findElement(By.linkText("Log in"));
 			if (login.isDisplayed()) {
-				System.out.println("logine  link is desable Test case is Pass");
+				System.out.println("login  link is desable Test case is Pass");
 				login.click();
 			}
 		} else {
