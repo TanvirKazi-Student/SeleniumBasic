@@ -34,15 +34,6 @@ public static void main(String[] args) throws InterruptedException {
 			}
 			Thread.sleep(1500);
 		}
-//		for (; index < list.size(); index++) 
-//		{
-//			sel.selectByIndex(index);//0,1
-//			Thread.sleep(1500);
-//			if (index > 0) {
-//				driver.navigate().back();
-//				}
-//			Thread.sleep(1500);
-//		}
 		System.out.println("outside the for loop");
 		driver.quit();
 	}

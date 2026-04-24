@@ -6,33 +6,32 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
+//Verify Display Dropdown Options in Digital Downloads Page 
+//Write a script for DWS webSite
+//1)open the browser
+//2)enter into DWS page
+//3)click digital download
+//4)select all the option inside the Display drop down top to bottom	
+//5)validate that selected option is applied correctly  	
+//6)close the browser
 public class Task4 {
-
 	public static void main(String[] args) throws InterruptedException {
-
 		ChromeDriver driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		driver.get("https://demowebshop.tricentis.com/");
-
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Digital downloads")).click();
 		Thread.sleep(2000);
-		WebElement singlSelect = driver.findElement(By.name("products-pagesize"));
+		WebElement singlSelect = driver.findElement(By.id("products-pagesize"));
 		Select sel = new Select(singlSelect);
-
-		List<WebElement> list = sel.getOptions();
-
-		int index = 0;
-		for (WebElement webElement : list) {
-			singlSelect = driver.findElement(By.name("products-pagesize"));
+		int size = sel.getOptions().size();
+		for (int i = 0; i < size; i++) {
+			singlSelect = driver.findElement(By.id("products-pagesize"));
 			sel = new Select(singlSelect);
-			sel.selectByIndex(index++);
+			sel.selectByIndex(i);
+			Thread.sleep(2000);
 		}
-		System.out.println("outside the for loop");
 		driver.quit();
-
 	}
 }

@@ -80,19 +80,19 @@ public class Task3 {
 
 			List<WebElement> prises = driver.findElements(By.xpath("//span[contains(@class,'unit-price')]"));
 			List<WebElement> removeCheck = driver.findElements(By.xpath("//input[@name='removefromcart']"));
-			
+
 			double max = Double.MIN_VALUE;
 			int index = 0;
 			for (WebElement webElement : prises) {
 				double prise = Double.parseDouble(webElement.getText());
 				if (prise > max) {
 					max = prise;
-					index++;//2
+					index++;// 2
 				}
 			}
 			removeCheck.get(index).click();
-			
-			int index2 = 0;//3
+
+			int index2 = 0;// 3
 			for (int i = index; i < prises.size(); i++) {
 				WebElement webele = prises.get(i);
 				double prise = Double.parseDouble(webele.getText());
@@ -101,7 +101,7 @@ public class Task3 {
 				}
 			}
 			removeCheck.get(index2).click();
-			
+
 			System.out.println("max price: " + max);
 			System.out.println(index);
 			System.out.println(index2);
