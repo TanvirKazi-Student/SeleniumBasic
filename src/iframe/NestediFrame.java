@@ -6,9 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class IframeWithInIframe {
+public class NestediFrame {
 
 	public static void main(String[] args) throws InterruptedException {
+		String expected_url = "https://demo.automationtesting.in/Index.html";
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -23,6 +24,16 @@ public class IframeWithInIframe {
 		Thread.sleep(2000);
 		driver.switchTo().defaultContent();
 		driver.findElement(By.xpath("//a[text()='Home']")).click();
+		String actual_url = driver.getCurrentUrl();
+
+		if (expected_url.equals(actual_url)) {
+			System.out.println("You are in Home page and testcase is passed");
+		}
+
+		else {
+			System.out.println("you are in not home page and test case is failed");
+		}
+
 		driver.quit();
 	}
 }
